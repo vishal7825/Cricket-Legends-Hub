@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.featured-players {
+    padding: 20px;
+}
+
+.player-card {
+    display: flex;           
+    margin: 10px 0;         /* Vertical spacing between cards */
+    padding: 10px;        
+    border: 1px solid #ddd; 
+    border-radius: 8px;    
+    background-color: #f8f8f8; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s; 
+}
+
+.player-card:hover {
+    transform: scale(1.05); 
+}
+
+.player-card img {
+    width: 100px;          /* Set a smaller width for the image */
+    height: auto;          /* Maintain aspect ratio */
+    border-radius: 8px;    /* Optional: rounded corners */
+}
+
+.player-card .text {
+    margin-left: 20px;     /* Space between image and text */
+}
+
+.player-card h4 {
+    margin: 0;             /* Remove default margin */
+}
+
+.player-card p {
+    margin: 5px 0;        /* Space between paragraphs */
+}
+.profile {
+    margin: 20px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-height: 200px; /* Limit the height */
+    overflow-y: auto; /* Allow scrolling if content exceeds height */
+}
+
+.profile img {
+    width: 80px; /* Smaller image size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.profile h3 {
+    margin: 10px 0 5px; /* Spacing adjustments */
+}
+
+.profile p {
+    margin: 5px 0; /* Consistent spacing */
+}
+
+
+.profile, .match, #fan-zone {
+    margin: 20px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+#map-container {
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

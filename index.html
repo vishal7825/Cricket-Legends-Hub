@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Legends Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Cricket Legends Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#players">Player Profiles</a></li>
+                <li><a href="#matches">Top Matches</a></li>
+                <li><a href="#fan-zone">Fan Zone</a></li>
+                <li><a href="#map">Interactive Map</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to Cricket Legends Hub!</h2>
+        <p>Your ultimate destination to explore the world of cricket and its legendary players.</p>
+        <div class="featured-players">
+            <h3>Featured Players</h3>
+            <div class="player-card" id="player1">
+                <img src="./assets/player1.jpg" alt="Player 1">
+                <div class="text">
+                    <h4>Virat kohli</h4>
+                    <p>Notable Achievement </p>
+                    <p><strong>Interesting Fact:</strong> Add an interesting fact about Player 1 here.</p>
+                </div>
+            </div>
+            <div class="player-card" id="player2">
+                <img src="./assets/player2.jpg" alt="Player 2">
+                <div class="text">
+                    <h4>Sachin Tendulkar</h4>
+                    <p>Notable Achievement </p>
+                    <p><strong>Interesting Fact:</strong> Add an interesting fact about Player 2 here.</p>
+                </div>
+            </div>
+            <div class="player-card" id="player3">
+                <img src="./assets/player3.jpg" alt="Player 3">
+                <div class="text">
+                    <h4>Rohit Sharma</h4>
+                    <p>Notable Achievement </p>
+                    <p><strong>Interesting Fact:</strong> Add an interesting fact about Player 3 here.</p>
+                </div>
+            </div>
+            <div class="player-card" id="player1">
+                <img src="./assets/player4.jpg" alt="Player 1">
+                <div class="text">
+                    <h4>Hardik Pandya</h4>
+                    <p>Notable Achievement </p>
+                    <p><strong>Interesting Fact:</strong> Add an interesting fact about Player 1 here.</p>
+                </div>
+            </div>
+            <div class="player-card" id="player2">
+                <img src="./assets/player5.jpg" alt="Player 2">
+                <div class="text">
+                    <h4>Jasprit Bumrah</h4>
+                    <p>Notable Achievement </p>
+                    <p><strong>Interesting Fact:</strong> Add an interesting fact about Player 2 here.</p>
+                </div>
+            </div>
+            <div class="player-card" id="player3">
+                <img src="./assets/player6.jpg" alt="Player 3">
+                <div class="text">
+                    <h4>Surya Kumar Yadav</h4>
+                    <p>Notable Achievement </p>
+                    <p><strong>Interesting Fact:</strong> Add an interesting fact about Player 3 here.</p>
+                </div>
+            </div>
+            <div class="player-card" id="player1">
+                <img src="./assets/player7.jpg" alt="Player 1">
+                <div class="text">
+                    <h4>Shubhman Gill</h4>
+                    <p>Notable Achievement </p>
+                    <p><strong>Interesting Fact:</strong> Add an interesting fact about Player 1 here.</p>
+                </div>
+            </div>
+            <div class="player-card" id="player2">
+                <img src="./assets/player8.jpg" alt="Player 2">
+                <div class="text">
+                    <h4>Rishbh Pant</h4>
+                    <p>Notable Achievement </p>
+                    <p><strong>Interesting Fact:</strong> Add an interesting fact about Player 2 here.</p>
+                </div>
+            </div>
+            <div class="player-card" id="player3">
+                <img src="./assets/player9.jpg" alt="Player 3">
+                <div class="text">
+                    <h4>KL Rahul</h4>
+                    <p>Notable Achievement </p>
+                    <p><strong>Interesting Fact:</strong> Add an interesting fact about Player 3 here.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="players">
+        <h2>Player Profiles</h2>
+        <div class="profile" id="profile1">
+            <img src="./assets/player1.jpg" alt="Player 1">
+            <h3>Virat Kohli</h3>
+            <p><strong>Career Statistics:</strong> Runs: 10,000 | Wickets: 300</p>
+            <p><strong>Notable Achievements:</strong> World Cup Winner, Player of the Series, etc.</p>
+        </div>
+        <div class="profile" id="profile2">
+            <img src="./assets/player2.jpg" alt="Player 2">
+            <h3>Sachin Tendulkar</h3>
+            <p><strong>Career Statistics:</strong> Runs: 8,000 | Wickets: 250</p>
+            <p><strong>Notable Achievements:</strong> Fastest Century, Best Bowler, etc.</p>
+        </div>
+        <div class="profile" id="profile3">
+            <img src="./assets/player3.jpg" alt="Player 3">
+            <h3>Rohit Sharma</h3>
+            <p><strong>Career Statistics:</strong> Runs: 5,000 | Wickets: 150</p>
+            <p><strong>Notable Achievements:</strong> Player of the Match, Best All-Rounder, etc.</p>
+        </div>
+        <div class="profile" id="profile1">
+            <img src="./assets/player4.jpg" alt="Player 1">
+            <h3>Hardik Pandya</h3>
+            <p><strong>Career Statistics:</strong> Runs: 10,000 | Wickets: 300</p>
+            <p><strong>Notable Achievements:</strong> World Cup Winner, Player of the Series, etc.</p>
+        </div>
+        <div class="profile" id="profile2">
+            <img src="./assets/player5.jpg" alt="Player 2">
+            <h3>Jasprit Bumrah</h3>
+            <p><strong>Career Statistics:</strong> Runs: 8,000 | Wickets: 250</p>
+            <p><strong>Notable Achievements:</strong> Fastest Century, Best Bowler, etc.</p>
+        </div>
+        <div class="profile" id="profile3">
+            <img src="./assets/player6.jpg" alt="Player 3">
+            <h3>Surya Kumar Yadav</h3>
+            <p><strong>Career Statistics:</strong> Runs: 5,000 | Wickets: 150</p>
+            <p><strong>Notable Achievements:</strong> Player of the Match, Best All-Rounder, etc.</p>
+        </div>
+    </section>
+
+    <section id="matches">
+        <h2>Top Matches</h2>
+        <div class="match"> 
+            <h3>Match Title</h3>
+            <p>Description of the match highlights.</p>
+            <iframe src="https://www.youtube.com/embed/match_video_id" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <!-- Add more match highlights as needed -->
+    </section>
+
+    <section id="fan-zone">
+        <h2>Fan Zone</h2>
+        <form id="fan-story-form">
+            <textarea placeholder="Share your favorite player story!" required></textarea>
+            <button type="submit">Submit Story</button>
+        </form>
+        <div id="submitted-stories"></div>
+    </section>
+
+    <section id="map">
+        <h2>Interactive Map</h2>
+        <div id="map-container" style="height: 400px;"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Cricket Legends Hub</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
